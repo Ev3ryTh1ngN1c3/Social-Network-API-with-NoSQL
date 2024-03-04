@@ -1,0 +1,15 @@
+{
+    "scripts": {
+    "start": "node server.js"
+  },
+  "name": "social-network-api",
+  "description": "Social Network API with NoSQL",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Lisa Brongo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.3"
+  }
+}
