@@ -14,6 +14,12 @@ module.exports = {
   // Create a User
   async createUser(req, res) {
     try {
+      // Ensure that the request body includes the required fields "email" & "userName"
+      const { email, userName } = req.body;
+      if (!email || !userName) {
+        return res.status(400).json({ message: 'Email and UserName are required' });
+      }
+
       const user = await User.create(req.body);
       res.json(user);
     } catch (err) {
