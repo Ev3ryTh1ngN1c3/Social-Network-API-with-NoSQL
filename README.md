@@ -61,8 +61,7 @@
 
   thank you to UCF Coding Boot Camp Instructor : Steve Mustanski <br>
   & Teacher Assistants : Mateo Wallace & Gerard Mennella <br>
-  also Tanner Shank / FirefoxFlareon : https://github.com/FirefoxFlareon <br>
-  & Thomas Calle : https://github.com/ThomasCalle
+  also Thomas Calle : https://github.com/ThomasCalle
  
   ## Questions
 
