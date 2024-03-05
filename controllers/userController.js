@@ -30,6 +30,7 @@ module.exports = {
 
   // Get single user
   async getSoloUser(req, res) {
+    console.log("Id",req.params.userId)
     try {
       const user = await User.findOne({ _id: req.params.userId })
         .populate('thoughts')
@@ -39,9 +40,10 @@ module.exports = {
         res.status(404).json({ message: 'User Id not found' });
         return;
       }
-
+      console.log("Get solo user  ",user)
       res.json(user);
     } catch (err) {
+      console.log("Error",err)
       res.status(500).json(err);
     }
   },
@@ -89,7 +91,7 @@ module.exports = {
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $addToSet: { friends: req.body.friendId } },
+        { $addToSet: { friends: req.params.friendId } },
         { new: true }
       );
 
@@ -109,7 +111,7 @@ module.exports = {
     try {
       const user = await User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $pull: { friends: req.body.friendId } },
+        { $pull: { friends: req.params.friendId } },
         { new: true }
       );
 
