@@ -40,8 +40,8 @@
   
   ## What Was Learned
 
-  ･ understanding the importance of using a NoSQL databases like MongoDB 
-  for handling unstructured data in a social network application
+  ･ understanding the importance of using a NoSQL databases like MongoDB <br>
+    for handling unstructured data in a social network application
 
   ･ implementing RESTful API endpoints using Express.js for routing
 
