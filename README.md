@@ -4,7 +4,7 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  # Walkthrough Video
+  # Walk-Through Video
 
   https://www.loom.com/share/6785fee2efc04caf99041428413671e8?sid=93bc22d9-3b1e-4296-a07d-4c0b9a2506ac
 
